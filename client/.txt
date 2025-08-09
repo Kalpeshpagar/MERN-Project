@@ -1,0 +1,19 @@
+1. project setup 
+
+I. npm create vite@latest
+II. npm i react-router-dom,
+react-youtube -> we add youtube videos,
+uniqid -> geneerate hexadecimal uniqid for courses,
+quill -> generate reach state for our course section ,
+humanize-duration -> hour,minute secode
+rc-progress -> design a progress bar ,
+react-simple-star-rating -> display star rating for our courses 
+
+2. vite + tailwind setup
+
+3. google font
+
+4. folder
+I. context -> for store states and functions used in entire application
+
+5. quill for style formating import quill/dist/quill/snow.css
