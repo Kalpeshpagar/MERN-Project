@@ -1,6 +1,5 @@
-const express = require('express')
-const {updateRoleToEducator} = require('../controllers/educatorController')
-
+import express from 'express';
+import { updateRoleToEducator } from '../controllers/educatorController.js';
 const educatorRouter = express.Router();
 
 // Add educator router

@@ -1,18 +1,17 @@
-const clerkClient = require('@clerk/express')
+import { clerkClient } from '@clerk/express';
 
-const updateRoleToEducator = async (req, res) => {
-    try {
-        const userId = req.auth.userId
+export const updateRoleToEducator = async (req, res) => {
+  try {
+    const userId = req.auth.userId;
 
-        await clerkClient.users.updateUserMetadata(userId, {
-            publicMetadata: {
-                role:'educator',
-            }
-        })
-        res.json({success:true,message:'You can publish a course now'})
-    } catch (error) {
-        res.json({success:false,message:error.message})
-    }
-}
+    await clerkClient.users.updateUserMetadata(userId, {
+      publicMetadata: {
+        role: 'educator',
+      },
+    });
 
-module.exports  = {updateRoleToEducator}
+    res.json({ success: true, message: 'You can publish a course now' });
+  } catch (error) {
+    res.json({ success: false, message: error.message });
+  }
+};
